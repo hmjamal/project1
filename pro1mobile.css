@@ -1,0 +1,496 @@
+/* navbar start here*/
+*{box-sizing: border-box; font-family: 'Montserrat', sans-serif;}/*responsive design er jonn0 , sob somoi korte hobe*/ 
+body{margin: 0%;}/*by defold margin k cut korar jonno*/
+
+h1{font-size: 2.5rem;
+        text-align: center;
+}
+
+a{color:black;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+p{font-size: 1.2rem;
+text-align: justify;}/*page a joto golo p nibo sobar size 1.2 hove*/
+
+.dotted-hr{
+        border:dotted 6px white;/* eikane 2 ti border ase jabe*/
+        border-bottom: none;/* 2 ti border tek nottom ti tole niar jonno  */
+        margin: 20px auto; /* up/down= 20px, dane/bame=auto margin */
+        width:90px; 
+}
+
+/* oporer sobgolo design common design ortat bar bar use na kore oporer dik a nra asa holo */ 
+
+
+
+/*  mobile/laptoper jonno float=left & content golo 10px jaiga niba*/
+[class*="col-"]
+{float:left; padding: 10px;}
+
+/*for mobile(je kono columer size er jonno full screen niba)*/
+[class*="col-"]
+{width: 100%;}
+/* floating korar por obossoi clear kore deta hoi(floating korte hoi navbarer sese)*/
+
+
+
+
+.navbar{
+
+        background-color: rgb(76, 131, 113);
+        padding: 1%;/*up/down 1%, dane/bame 7%*/
+        text-align: center;
+}
+
+
+
+.navbar h1 {color: aliceblue; 
+        margin: 0%;
+    padding: 10px;}
+
+
+.navbar-menu{
+        display: flex;/*mouse nila je display ta hoe*/
+        flex-direction: column;/*m er jonno full screen jaiga niba*/
+        text-transform: uppercase;
+
+}
+
+.navbar-menu a{
+        background-color: rgb(207, 207, 207);
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px;
+
+}
+
+.navbar-menu a:hover{background-color: rgb(141, 130, 117);}
+
+
+
+.navbar::after{
+        content: '';
+        display: table;   
+        clear: both;
+}
+
+
+/* navbar ends here*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* profiel starts here*/
+
+.profile{padding: 130px 10px; /*ei p er mean holo oparer navbar er part er sate ei part er upar/nic=130, dane/bame=10px */
+        position: relative; /*padding debar porer kaj icon position kore tai jeheto icon profile er bitor ace tai profile k relative kore icon golor
+         kaj korar somoi iconer position absolute korte hove*/
+        text-align: center;
+}
+
+.profile .top-weather-icon{
+        position: absolute;
+        right: 60px;/*first design ta jeheto mobile er jonoo tai right a 30px & navbar
+                    div tek 20px nic a nambe*/ 
+        top:20px;
+        transition:transform 2s;/* icon tak hover korle moving koranur jonno ei property use hove*/
+}
+
+
+.profile .top-weather-icon:hover{  /*space na dilao kaj hoscena... very sad*/
+                        transform:rotate(360deg);
+
+}
+
+
+.profile-desc h1{
+                font-family: Arial, Helvetica, sans-serif;}
+
+.profile-desc p{
+            color:rgb(8, 189, 38);
+            text-align: center;
+            width: 90%;/* 0% dila lika golo opar/nic lomba hoi jabe*/
+            margin:0 auto 20px auto ;/* ei margin er mean holo h1 er sate p er lika golo up=0,r=ja pabe, down=20px, left=auto=ja pabe*/ 
+}
+
+
+
+/* ager  icon ta copy kore kicho change kora holo*/
+.profile .bottom-weather-icon{
+    position: absolute;
+    left: 60px;/*first design ta jeheto mobile er jonoo tai right a 30px & navbar
+                div tek 20px nic a nambe*/ 
+    bottom: 10px;
+    transition:transform 2s;/* icon tak hover korle moving koranur jonno ei property use hove*/
+}
+
+
+.profile .bottom-weather-icon:hover{  /*space na dilao kaj hoscena... very sad*/
+                    transform:rotate(360deg);
+
+}
+ 
+
+/* profiel ends here*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*about me design start here*/
+
+.about-me{    /*aboutme full div tar kaj/design golo nic a dea holo.. eikane     */      
+        background-color: rgb(99, 178, 202);  
+        padding: 2% 7%; /* ei padding ia about me h2 tar ... up/down e 2%, dane/bme=7%  */ 
+        color:aliceblue;
+        text-align: center; 
+        font-family:'Courier New', Courier, monospace;
+}
+
+.aboutme-image img{   /* eikane .aboutme-image class a doke img er kaj golo kore hoilo */
+        border: 5px solid white;  /*img er border ta 5 px round dotted hobena solid hobe ..*/
+        border-radius: 50%; /*100% dila round hovena.. that means squre teke jabe */
+        height: 220px;
+        width:200px;
+}
+
+.about-me p{text-align: center;}
+
+.about-me a{font-size: 1.2rem;}
+
+.cv-button{
+        background-color: rgb(32, 87, 87);
+        color:aliceblue;
+        border:none; /*border na dekanur jonno */
+        border-radius: 12px;
+        padding: 15px;
+        font-size: 1.2rem;
+        cursor:pointer; 
+        margin:10px; /*ei margin er ortho holo sardik tek 10px(opore lika tek, dane,bame, nic a=10px */
+}
+
+
+
+
+.about-me::after{   /*jokon main div er bitor aro 2/3 ta div hoi tokon first a sokol div clear korte hoi. 
+        div clear korar coz holo div golo jokon float left/right kora hoi tokon jaiga moto takar jonno */
+                clear: both;
+                display: table;
+                content: '';
+}
+
+/*about me design ends here*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*professional experience design starts here*/
+
+
+.professional-experience{padding:2% 0%;} /*p E full div/full card ti up/down e 2%  L/R =0% ager div tek separit hove*/
+
+
+.professional-experience .card{
+        background-color: darkgrey;
+        border-radius: 5px;
+        padding: 10px; /* ei p dara card er bitorer sob kicho 10px aro bitorer dik a doke jabe*/
+        transition: 0.5s;
+        height: 730px;/*height tik kore na dela jototok content tototok niba */
+
+}
+
+.professional-experience .card:hover{
+                box-shadow: 0 4px 20px 2px black; /*0=x exis a shadow hove,  4px= y exis  '''( 20=blur, 2= color) */
+}
+
+.card-icon{ text-align: center;}
+
+.card-icon img{
+                margin-top:20px; /*m top bolte card er opor tek koto px nambe */
+                width: 110px; /* width=0 hole iconta deka javena*/
+
+}
+
+.rounded-img{  /* icon design er kaj moloto alada class=rounded-img dea kore hoice */
+        border: 5px solid white;
+        border-radius: 50%;
+        padding: 15px;
+}
+
+
+.card-title h2{
+        background-color: darkslategrey;
+        color:aliceblue;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+
+}
+
+/*professional exp er 2 ti part eikane ses holo(1 ta copy kora holo) ...... 3rd part ti(skills part) ti akan tek start hosche*/
+
+.skills-container{padding: 45px;}
+
+.skills-container li{
+                    list-style: none;  
+                    font-weight: bolder;
+                    margin: 30px 0px;  /*items golo opor/nic a faka rakar jonno=30px */
+                    position: relative;/* p=r bolte list er opor base korei progress bar make kora hove .tai p=r */
+                    text-transform: uppercase;
+}
+
+.skills-container li::before{ /*before mane animation er age kivabe dekabe ota design kora */
+                content: ''; /*initially je progress bar ta takbe okane kono content takbena */
+                position: absolute; /* onner opor base kore kono kicho make korle taake absolute rakte hoi */
+                background-color:rgb(146, 207, 207);/*cintent er weight+height select na korle dila ogolo show korena */
+               width: 100%;
+               height: 10px;
+                top:calc(100% + 5px); /* eita na dila prog bar & list golo 1 sate hoi jabe tai 100+5/10 dea holo */
+                border-radius: 1000px;
+}              
+
+
+.skills-container li::after{ /*animation korar por ki hove seta design kora( eikane moloto bifore teke sob copy kora hoice.
+                                change golo holo= 1.width alada alada hove */
+        content: ''; 
+        left:0%;/*eitar mean holo ei p bar ti left teke start hove. 0 na dila ordek teke start hobe */
+        position: absolute; 
+        background-color:rgb(103, 141, 95); /*color change k hobe coz animation er por kon color dekabe */
+        width: 0%; /* after a width=0 na dila sob kicho borbad hoi jajbe*/
+        height: 10px;
+        top:calc(100% + 5px);
+        border-radius: 1000px;
+        /*nicer golo add korte hove*/
+        animation-duration: 3s;
+        animation-delay: 1s; /*hover korar koto second por A start hobe */
+        animation-timing-function: linear;
+        animation-fill-mode:forwards; /*animaton kon dik teke hobe*/
+        animation-iteration-count: infinite; /* animation kotokkon solbe*/
+     
+}   
+/* etokkon porjonto ja property golo code  kora holo segolo animation property but kar opor
+animation korbo ta nica dekano holo */
+
+.skills-container li.html::after{ 
+           animation-name: html;    /*moloto ei animation name dea mol animation set korbo */ 
+}
+ 
+@keyframes html{to{width:90%;}}         
+/*eita dara bojano holo html=90% gain holo */
+
+.skills-container li.css::after{ 
+        animation-name: css;    
+}
+
+@keyframes css{to{width:50%;}} 
+
+.skills-container li.bootstrap::after{ 
+        animation-name: bootstrap;    
+}
+
+@keyframes bootstrap{to{width:20%;}} 
+
+.skills-container li.git::after{ 
+        animation-name: git;    
+}
+
+@keyframes git{to{width:70%;}} 
+
+.skills-container li.jquery::after{ 
+        animation-name: jquery;    
+}
+
+@keyframes jquery{to{width:60%;}} 
+
+.skills-container li.js::after{ 
+        animation-name: js;    
+}
+
+@keyframes js{to{width:50%;}} 
+
+
+
+
+
+
+.professional-experience::after{
+                clear:both;
+                display: table;
+                content: '';
+
+}
+
+
+
+/*professional experience design starts here*/
+
+
+
+
+
+
+
+
+
+
+/*achievement-contact start here */
+.achievement-contact{ 
+                padding: 1% 7%;
+                background-color: darkcyan;
+                color:rgb(234, 241, 247);
+                text-align: center;
+
+}
+
+
+.contact{ padding: 1% 7%;
+        background-color: darkcyan;
+        color:rgb(234, 241, 247);
+        text-align: center;}
+
+.contact input,textarea{
+                width: 100%;
+                padding: 10px; /*placeholderer lika golo sardik tek 10px jaiga niba/center e takbe , border dekabena, risize nolte user textarea box tak r boro korte parbena */
+                font-size: 1rem;
+                text-align: center;
+                border: none;
+                border-radius: 10px;
+                resize: none;
+
+}
+
+ .contact button{
+                border:none;
+                border-radius: 12px;
+                background-color: aqua;
+                color:aliceblue;
+                cursor: pointer;
+                padding: 15px;
+                margin: 10px;
+                width: 50%;
+
+ }
+
+/*link design*/
+
+.contact-links{text-align: center;}
+
+.media-button .btn{
+                border:none;
+                border-radius: 25px;
+                cursor: pointer;
+                font-size: 20px;
+                padding: 5px;
+                margin: 10px;
+                width: 50px;
+                background-color: rgb(243, 223, 226);
+
+}
+
+.btn:hover{background-color: rgb(134, 132, 132);}
+ 
+
+
+  
+
+
+.achievement-contact::after{
+        clear:both;
+        display: table;
+        content: '';
+
+}
+
+
+/*achievement-contact ends here */
+
+
+
+
+
+
+
+/*footer starts here */
+
+.footer{
+        background-color: rgb(150, 150, 190);
+        color:rgb(0, 0, 0);
+        padding: 20px;
+        text-align: center;
+        font-size: 0.5rem;
+
+}
+
+.footer-menu a{
+        display:block;   /*block kore dibar karone 1tir nic a 1ti sole asbe */
+        margin: 15px 0px;
+        font-size: 1rem;
+
+}
+
+.footer-menu a:hover{color: rgb(236, 231, 228);}
+
+.footer-desc{font-size: 1rem;;}
+
+
+.footer::after{ /*eita 1st e na korle kkno properly way te kaj korbena */
+        clear:both;
+        display: table;
+        content: '';
+
+}
+
+
+
+/*footer ends here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
